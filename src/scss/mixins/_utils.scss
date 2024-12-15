@@ -1,0 +1,87 @@
+@mixin utils-user-select ($value) {
+  -moz-user-select: $value;
+  -webkit-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
+}
+
+@mixin utils-appearance ($value) {
+  -webkit-appearance: $value;
+  -moz-appearance: $value;
+  appearance: $value;
+}
+
+@mixin utils-text-ellipsis ($lines: 1, $height) {
+  display: -webkit-box;
+  height: $height * $lines;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
+@mixin utils-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin utils-disabled {
+  opacity: .25;
+  box-shadow: none !important;
+  background-image: none !important;
+  cursor: not-allowed;
+}
+
+@mixin visible-hidden {
+  position: absolute;
+
+  visibility: hidden;
+
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+@mixin breakpoints-prop ($name) {
+  &--#{$name} {
+    @content;
+
+    &-xs {
+      @include media-xs-up {
+        @content;
+      }
+    }
+
+    &-sm {
+      @include media-sm-up {
+        @content;
+      }
+    }
+
+    &-md {
+      @include media-md-up {
+        @content;
+      }
+    }
+
+    &-lg {
+      @include media-lg-up {
+        @content;
+      }
+    }
+
+    &-xl {
+      @include media-xl-up {
+        @content;
+      }
+    }
+
+    &-xxl {
+      @include media-xxl-up {
+        @content;
+      }
+    }
+  }
+}

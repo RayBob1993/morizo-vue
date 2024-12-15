@@ -1,0 +1,98 @@
+.v-button {
+  --v-button-font-family: var(--font-family-roboto);
+  --v-button-bg: transparent;
+  --v-button-color: inherit;
+  --v-button-font-size: inherit;
+  --v-button-line-height: inherit;
+  --v-button-border-color: transparent;
+
+  --v-button-padding-y: 0;
+  --v-button-padding-x: 0;
+
+  @include utils-user-select(none);
+  @include utils-appearance(none);
+
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  transition: var(--transition-base);
+
+  margin: 0;
+
+  outline: 0;
+  border: 1px solid var(--v-button-border-color);
+  border-radius: 0;
+
+  background-color: var(--v-button-bg);
+  cursor: pointer;
+  padding: var(--v-button-padding-y) var(--v-button-padding-x);
+
+  font-family: var(--v-button-font-family);
+  font-size: var(--v-button-font-size);
+  line-height: var(--v-button-line-height);
+  color: var(--v-button-color);
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  text-shadow: none;
+  white-space: nowrap;
+
+  font-weight: 400;
+
+  -webkit-tap-highlight-color: transparent;
+
+  &:disabled {
+    @include utils-disabled();
+  }
+
+  &--wide {
+    width: 100%;
+  }
+
+  &--loading {
+    .v-button__content {
+      opacity: 0;
+    }
+  }
+
+  @include breakpoints-prop (size) {
+    &-mini {
+      --v-button-padding-y: var(--gutter-4);
+      --v-button-padding-x: var(--gutter-6);
+      --v-button-font-size: var(--font-size-mini);
+      --v-button-line-height: var(--line-height-mini);
+    }
+  }
+
+  &--theme {
+    &-primary {
+      --v-button-bg: var(--color-black);
+      --v-button-border-color: var(--color-black);
+      --v-button-color: var(--color-white);
+
+      @include hover {
+        --v-button-bg: #444;
+      }
+    }
+  }
+
+  &--plain {
+    @include notHover {
+      --v-button-bg: transparent;
+
+      &.v-button--theme {
+        &-primary {
+          --v-button-color: var(--color-black);
+        }
+      }
+    }
+  }
+
+  &__spinner {
+    position: absolute;
+    top: calc(50% - 9px);
+    left: calc(50% - 9px);
+  }
+}

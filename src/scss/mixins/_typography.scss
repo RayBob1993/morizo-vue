@@ -1,0 +1,64 @@
+@mixin font-size-mini {
+  line-height: var(--line-height-mini);
+  font-size: var(--font-size-mini);
+}
+
+@mixin font-size-small {
+  line-height: var(--line-height-small);
+  font-size: var(--font-size-small);
+}
+
+@mixin font-size-medium {
+  line-height: var(--line-height-medium);
+  font-size: var(--font-size-medium);
+}
+
+@mixin font-size-large {
+  line-height: var(--line-height-large);
+  font-size: var(--font-size-large);
+}
+
+@mixin font-size-big {
+  line-height: var(--line-height-big);
+  font-size: var(--font-size-big);
+}
+
+@mixin font-size-huge {
+  line-height: var(--line-height-huge);
+  font-size: var(--font-size-huge);
+}
+
+@mixin font-size-massive {
+  line-height: var(--line-height-massive);
+  font-size: var(--font-size-massive);
+}
+
+@mixin font-size-h1 {
+  line-height: var(--line-height-h1);
+  font-size: var(--font-size-h1);
+}
+
+@mixin font-size-h2 {
+  line-height: var(--line-height-h2);
+  font-size: var(--font-size-h2);
+}
+
+@mixin font-size-h3 {
+  line-height: var(--line-height-h3);
+  font-size: var(--font-size-h3);
+}
+
+@mixin font-size-h4 {
+  line-height: var(--line-height-h4);
+  font-size: var(--font-size-h4);
+}
+
+@mixin font-size-h5 {
+  line-height: var(--line-height-h5);
+  font-size: var(--font-size-h5);
+}
+
+@mixin font-size-h6 {
+  line-height: var(--line-height-h6);
+  font-size: var(--font-size-h6);
+}

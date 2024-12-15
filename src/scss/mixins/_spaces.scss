@@ -1,0 +1,81 @@
+@mixin generate-spaces ($direction) {
+  &-2 {
+    margin-#{$direction}: var(--gutter-2)!important;
+  }
+
+  &-4 {
+    margin-#{$direction}: var(--gutter-4)!important;
+  }
+
+  &-6 {
+    margin-#{$direction}: var(--gutter-6)!important;
+  }
+
+  &-8 {
+    margin-#{$direction}: var(--gutter-8)!important;
+  }
+
+  &-10 {
+    margin-#{$direction}: var(--gutter-10)!important;
+  }
+
+  &-12 {
+    margin-#{$direction}: var(--gutter-12)!important;
+  }
+
+  &-14 {
+    margin-#{$direction}: var(--gutter-14)!important;
+  }
+
+  &-16 {
+    margin-#{$direction}: var(--gutter-16)!important;
+  }
+
+  &-18 {
+    margin-#{$direction}: var(--gutter-18)!important;
+  }
+
+  &-20 {
+    margin-#{$direction}: var(--gutter-20)!important;
+  }
+
+  &-22 {
+    margin-#{$direction}: var(--gutter-22)!important;
+  }
+
+  &-24 {
+    margin-#{$direction}: var(--gutter-24)!important;
+  }
+
+  &-26 {
+    margin-#{$direction}: var(--gutter-26)!important;
+  }
+
+  &-28 {
+    margin-#{$direction}: var(--gutter-28)!important;
+  }
+
+  &-30 {
+    margin-#{$direction}: var(--gutter-30)!important;
+  }
+
+  &-32 {
+    margin-#{$direction}: var(--gutter-32)!important;
+  }
+
+  &-34 {
+    margin-#{$direction}: var(--gutter-34)!important;
+  }
+
+  &-36 {
+    margin-#{$direction}: var(--gutter-36)!important;
+  }
+
+  &-38 {
+    margin-#{$direction}: var(--gutter-38)!important;
+  }
+
+  &-40 {
+    margin-#{$direction}: var(--gutter-40)!important;
+  }
+}

@@ -1,0 +1,94 @@
+@use "sass:math";
+
+@mixin generate-cols {
+  @for $i from 0 through $grid-columns {
+    &-#{$i} {
+      flex: 0 0 auto;
+      width: percentage(math.div($i, $grid-columns));
+    }
+  }
+
+  &-25 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+
+  &-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  &-default {
+    flex: 1 0 0%;
+    width: 100%;
+  }
+}
+
+@mixin generate-offsets {
+  @for $i from 0 through $grid-columns {
+    &-#{$i} {
+      margin-left: percentage(math.div($i, $grid-columns));
+    }
+  }
+
+  &-25 {
+    margin-left: 20%;
+  }
+}
+
+@mixin generate-orders {
+  @for $i from 1 through $grid-columns {
+    &-#{$i} {
+      order: $i
+    }
+  }
+
+  &-25 {
+    flex-basis: 20%;
+    max-width: 20%;
+  }
+}
+
+@mixin generate-justify {
+  &-start {
+    justify-content: flex-start;
+  }
+
+  &-center {
+    justify-content: center;
+  }
+
+  &-end {
+    justify-content: flex-end;
+  }
+
+  &-around {
+    justify-content: space-around;
+  }
+
+  &-between {
+    justify-content: space-between;
+  }
+}
+
+@mixin generate-align ($type) {
+  &-start {
+    align-#{$type}: flex-start;
+  }
+
+  &-center {
+    align-#{$type}: center;
+  }
+
+  &-end {
+    align-#{$type}: flex-end;
+  }
+
+  &-baseline {
+    align-#{$type}: baseline;
+  }
+
+  &-stretch {
+    align-#{$type}: stretch;
+  }
+}

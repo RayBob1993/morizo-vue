@@ -1,0 +1,12 @@
+@import './font-family';
+@import './colors';
+@import './grid';
+@import './spaces';
+@import './typography';
+@import './transition';
+@import './border-radius';
+@import './overlay';
+
+:root {
+  --scrollbar-width: 0;
+}

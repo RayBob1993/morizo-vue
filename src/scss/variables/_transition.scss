@@ -1,0 +1,6 @@
+:root {
+  --transition-base-duration: 0.2s;
+  --transition-slow-duration: 0.5s;
+
+  --transition-base: var(--transition-base-duration) ease-in-out;
+}

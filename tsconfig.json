@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "types": [
+      "@types/node",
+      "@types/inputmask"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
