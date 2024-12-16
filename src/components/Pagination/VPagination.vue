@@ -16,7 +16,7 @@
   import createPagination from './createPagination';
   import { VButton } from '../Button';
   import { VPaginationContextKey } from '../../keys';
-  import { provide, computed } from 'vue';
+  import { provide, computed, defineAsyncComponent } from 'vue';
 
   const props = withDefaults(defineProps<IVPaginationProps>(), {
     pageRange: 3,

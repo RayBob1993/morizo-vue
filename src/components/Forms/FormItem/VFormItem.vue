@@ -36,7 +36,7 @@
   import { useForm } from '../../../composables';
   import { VFormItemContextKey } from '../../../keys';
   import { isObject, uuidv4, getProp, clone } from '../../../utils';
-  import { useTemplateRef, ref, shallowRef, computed, watch, provide, onMounted, onUnmounted, defineAsyncComponent } from 'vue';
+  import { useTemplateRef, ref, shallowRef, computed, watch, provide, onMounted, onUnmounted, defineAsyncComponent, nextTick } from 'vue';
   import Schema from 'async-validator';
 
   const props = defineProps<IVFormItemProps>();

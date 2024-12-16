@@ -7,6 +7,7 @@
   "module": "./dist/morizo-vue.js",
   "exports": {
     ".": {
+      "types": "./dist/types/types.d.ts",
       "import": "./dist/morizo-vue.js",
       "require": "./dist/morizo-vue.umd.cjs"
     },
@@ -16,10 +17,10 @@
   "engines": {
     "node": "20.16.0"
   },
-  "types": "./dist/index.d.ts",
+  "types": "./dist/types.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly --outDir ./dist/types",
     "types": "vue-tsc ",
     "lint:js": "eslint . --fix",
     "lint": "pnpm lint:js",
@@ -40,6 +41,7 @@
     "@commitlint/cli": "19.6.0",
     "@commitlint/config-conventional": "19.6.0",
     "@types/node": "22.10.2",
+    "vitest": "2.1.5",
     "happy-dom": "15.11.7",
     "@vitejs/plugin-vue": "5.2.1",
     "@vitejs/plugin-vue-jsx": "4.1.1",

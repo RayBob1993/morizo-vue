@@ -1,3 +1,4 @@
+import type { VNode } from 'vue';
 import type { ISizes, IThemes, IMessagePosition } from '../../enums';
 
 export type IVMessageProps = {

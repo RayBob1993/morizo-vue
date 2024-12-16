@@ -1,3 +1,4 @@
+import type { Ref } from 'vue';
 import type { Maybe } from '../../types';
 import type { ISizeProp, IThemeProp } from '../../props';
 

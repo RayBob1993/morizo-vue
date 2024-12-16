@@ -1,10 +1,18 @@
 {
   "compilerOptions": {
+    "sourceMap": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "baseUrl": ".",
     "types": [
       "@types/node",
       "@types/inputmask"
     ]
   },
+  "include": [
+    "src/types.ts"
+  ],
   "exclude": [
     "node_modules"
   ]

@@ -43,7 +43,7 @@
   import { VBackdrop } from '../Backdrop';
   import { VButton, VButtonEmpty } from '../Button';
   import { useToggle } from '../../composables';
-  import { onMounted } from 'vue';
+  import { onMounted, watch } from 'vue';
 
   defineProps<IVConfirmProps>();
 

@@ -48,6 +48,8 @@
   import { VBackdrop } from '../Backdrop';
   import { VButtonEmpty } from '../Button';
   import { isString } from '../../utils';
+  import { useToggle } from '../../composables';
+  import { computed } from 'vue';
 
   const props = withDefaults(defineProps<IVMessageProps>(), {
     position: 'center'

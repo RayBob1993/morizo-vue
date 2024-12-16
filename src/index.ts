@@ -6,3 +6,4 @@ export * from './enums';
 export * from './utils';
 export * from './locale';
 export * from './plugin';
+export * from './types';

@@ -1,3 +1,4 @@
+import type { Ref } from 'vue';
 import type { Maybe, MaybeElement } from '../types';
 import { watch } from 'vue';
 
