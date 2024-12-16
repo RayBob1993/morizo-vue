@@ -9,7 +9,7 @@ export * from './Drawer';
 export * from './Breadcrumbs';
 export * from './Image';
 export * from './Text';
-export * from './Section';
+export * from './Layout';
 export * from './Price';
 export * from './Icons';
 export * from './Dropdown';

@@ -34,7 +34,7 @@
 
 <script lang="ts" setup>
   import type { IVSectionProps, IVSectionSlots } from './types';
-  import { VContainer } from '../Layout';
+  import { VContainer } from '../index';
 
   defineProps<IVSectionProps>();
 

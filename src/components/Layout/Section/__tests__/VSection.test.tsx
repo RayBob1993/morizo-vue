@@ -1,4 +1,4 @@
-import { VSection } from '../';
+import { VSection } from '../index';
 import { describe, it, expect } from 'vitest';
 import { mount } from '@vue/test-utils';
 

@@ -6,3 +6,5 @@ export { default as VPlaceholderButton } from './VPlaceholderButton.vue';
 export { default as VPlaceholderImage } from './VPlaceholderImage.vue';
 export { default as VPlaceholderIcon } from './VPlaceholderIcon.vue';
 export { default as VPlaceholderBreadcrumbs } from './VPlaceholderBreadcrumbs.vue';
+
+export * from './plugin';

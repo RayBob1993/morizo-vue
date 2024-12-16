@@ -12,7 +12,7 @@ export * from './Link/types';
 export * from './Pagination/types';
 export * from './Price/types';
 export * from './Scrollbar/types';
-export * from './Section/types';
+export * from './Layout/Section/types';
 export * from './Tabs/types';
 export * from './Text/types';
 export * from './Spinner/types';
