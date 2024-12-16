@@ -1,6 +1,22 @@
 {
-  "name": "morizo-vue",
+  "name": "@morizo/vue-ui",
   "version": "1.0.0",
+  "description": "A Component Library for Vue 3",
+  "keywords": [
+    "component library",
+    "ui framework",
+    "ui",
+    "vue"
+  ],
+  "homepage": "https://github.com/RayBob1993/morizo-vue/",
+  "bugs": {
+    "url": "https://github.com/RayBob1993/morizo-vue/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RayBob1993/morizo-vue.git"
+  },
+  "license": "MIT",
   "type": "module",
   "files": ["dist"],
   "main": "./dist/morizo-vue.umd.cjs",
@@ -12,6 +28,9 @@
       "require": "./dist/morizo-vue.umd.cjs"
     },
     "./style.css": "./dist/style.css"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "packageManager": "pnpm@9.15.0",
   "engines": {
