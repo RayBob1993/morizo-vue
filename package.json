@@ -21,6 +21,8 @@
     "dev": "vite",
     "build": "vite build && vue-tsc --emitDeclarationOnly",
     "types": "vue-tsc ",
+    "lint:js": "eslint . --fix",
+    "lint": "pnpm lint:js",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -32,6 +34,11 @@
     "async-validator": "4.2.5"
   },
   "devDependencies": {
+    "husky": "9.1.7",
+    "lint-staged": "15.2.10",
+    "@vue/test-utils": "2.4.6",
+    "@commitlint/cli": "19.6.0",
+    "@commitlint/config-conventional": "19.6.0",
     "@types/node": "22.10.2",
     "happy-dom": "15.11.7",
     "@vitejs/plugin-vue": "5.2.1",
@@ -40,6 +47,10 @@
     "typescript": "5.7.2",
     "vite": "6.0.3",
     "sass": "1.77.6",
-    "vue-tsc": "2.1.10"
+    "vue-tsc": "2.1.10",
+    "eslint": "8.57.0",
+    "eslint-plugin-vue": "9.31.0",
+    "eslint-plugin-import": "2.31.0",
+    "@vue/eslint-config-typescript": "13.0.0"
   }
 }

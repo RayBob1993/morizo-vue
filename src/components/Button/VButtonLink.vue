@@ -11,8 +11,8 @@
 
 <script lang="ts" setup>
   import type { IVButtonLinkProps } from './types';
-  import { RouterLink } from 'vue-router';
   import { useBaseButtonClassList } from './useButton';
+  import { RouterLink } from 'vue-router';
 
   const props = defineProps<IVButtonLinkProps>();
 

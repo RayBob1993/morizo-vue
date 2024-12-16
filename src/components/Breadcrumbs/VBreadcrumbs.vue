@@ -34,8 +34,8 @@
 
 <script lang="ts" setup>
   import type { IVBreadcrumbProps } from './types';
-  import { RouterLink } from 'vue-router';
   import { VIcon } from '../Icons';
+  import { RouterLink } from 'vue-router';
 
   const props = defineProps<IVBreadcrumbProps>();
 

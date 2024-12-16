@@ -1,0 +1,10 @@
+{
+  "*.{js,ts,tsx,vue}": [
+    "eslint --fix",
+    "git add"
+  ],
+  "*.{js,ts,tsx}": [
+    "vitest related --run",
+    "git add"
+  ]
+}

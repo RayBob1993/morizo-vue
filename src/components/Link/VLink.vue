@@ -16,8 +16,8 @@
 
 <script lang="ts" setup>
   import type { IVLinkProps } from './types';
-  import { RouterLink } from 'vue-router';
   import { useBreakpointsProp } from '../../composables';
+  import { RouterLink } from 'vue-router';
 
   const props = defineProps<IVLinkProps>();
 
