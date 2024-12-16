@@ -22,15 +22,8 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'MorizoVue',
-      fileName: 'morizo-vue'
-    },
-    rollupOptions: {
-      external: ['vue'],
-      output: {
-        globals: {
-          vue: 'Vue'
-        }
-      }
+      fileName: 'morizo-vue',
+      formats: ['es']
     }
   }
 });

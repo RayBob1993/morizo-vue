@@ -1,6 +1,6 @@
 {
   "name": "@morizo/vue-ui",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "A Component Library for Vue 3",
   "keywords": [
     "component library",
@@ -23,12 +23,12 @@
   "module": "./dist/morizo-vue.js",
   "exports": {
     ".": {
-      "types": "./dist/types/types.d.ts",
-      "import": "./dist/morizo-vue.js",
-      "require": "./dist/morizo-vue.umd.cjs"
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/morizo-vue.js"
     },
     "./style.css": "./dist/style.css"
   },
+  "types": "./dist/types/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
@@ -36,7 +36,6 @@
   "engines": {
     "node": "20.16.0"
   },
-  "types": "./dist/types.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly --outDir ./dist/types",
